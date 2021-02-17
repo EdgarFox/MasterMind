@@ -2,7 +2,7 @@ import java.awt.Color;
 
 public class Modele {
 	
-	public Color[] COULEURS = {Color.YELLOW,
+	public static Color[] COULEURS = {Color.YELLOW,
 						Color.GREEN,
 						Color.BLUE,
 						Color.MAGENTA,
@@ -14,7 +14,11 @@ public class Modele {
 	public int DIFFICULTE = 4;
 	public enum ETAT {EN_COURS, GAGNE, PERDU};
 	
+	
+	public Rangee combinaison;
+	public Rangee[] propositions;
+	
 	public Modele() {
-		
+		this.propositions = new Rangee[this.N_TENTATIVES];
 	}
 }
