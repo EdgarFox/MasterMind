@@ -18,7 +18,15 @@ public class Modele {
 	public Rangee combinaison;
 	public Rangee[] propositions;
 	
+	public int tentative = 0;
+	
 	public Modele() {
 		this.propositions = new Rangee[this.N_TENTATIVES];
+	}
+	
+
+	
+	public void evaluerProposition() {
+		
 	}
 }
